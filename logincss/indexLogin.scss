@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(207, 243, 243);
 }
 .navbar-brand {
     font-weight: bold;
@@ -18,10 +19,6 @@ body{
       object-fit: cover; /* 確保圖片按比例填滿容器 */
     }
   }
-.botbox{
-    height: 40vw;
-    background-color: rgb(178, 201, 235);
-}  
 
 .carousel-inner{
     position: relative;

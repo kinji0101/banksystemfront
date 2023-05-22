@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
+  background-color: rgb(207, 243, 243);
 }
 
 .navbar-brand {
@@ -22,11 +23,6 @@ body {
   height: 100%; /* 圖片高度填滿容器 */
   -o-object-fit: cover;
      object-fit: cover; /* 確保圖片按比例填滿容器 */
-}
-
-.botbox {
-  height: 40vw;
-  background-color: rgb(178, 201, 235);
 }
 
 .carousel-inner {

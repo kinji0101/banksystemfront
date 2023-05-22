@@ -8,6 +8,14 @@
   color: red !important;
 }
 
+.loanitem {
+  color: red !important;
+}
+
+.deposititem {
+  color: red !important;
+}
+
 .service {
   background-color: rgb(199, 199, 240);
 }

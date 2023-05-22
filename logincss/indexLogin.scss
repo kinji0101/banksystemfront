@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: rgb(95, 95, 223) !important;
+}
+.deleteAccount{
+    color: red !important;
+}
+.carousel-item{
+    width: 100%; /* 設定固定寬度 */
+    height: 400px; /* 設定固定高度 */
+    margin: 0 auto; /* 將輪播元件置中 */
+    img {
+      width: 100%; /* 圖片寬度填滿容器 */
+      height: 100%; /* 圖片高度填滿容器 */
+      object-fit: cover; /* 確保圖片按比例填滿容器 */
+    }
+  }
+.botbox{
+    height: 10vw;
+    background-color: rgb(178, 201, 235);
+}  
+
+.carousel-inner{
+    position: relative;
+
+    .boxtest{
+        position: absolute;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(185, 199, 221);
+        margin-top: 40px;
+        margin-left: 110px;
+    }
+}
+.carousel-control-prev{
+
+    .carousel-control-next {
+      padding: -100px; 
+    }
+}
+
+.login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+
+    button{
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: transparent;
+        
+    }
+}
+
+.boxtest{
+    h1{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.nav {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+}
+.boxtest-login-success {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: green;
+    h5{
+        margin-top: 15px;
+    }
+    p{
+        margin-top: 10px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+  }
+  .success{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: green;
+    h5{
+        margin-top: 15px;
+    }
+    p{
+        margin-top: 10px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.btn-group{
+    top: 30%;
+    right: 5%;
+    position: absolute;
+}

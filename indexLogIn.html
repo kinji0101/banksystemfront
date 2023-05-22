@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href=".//logincss/indexLogin.css">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+  <script src="./path/to/your/custom/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+  <title>我是銀行</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="topbox">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <i class="fas fa-piggy-bank"></i>比奇寶銀行</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">還沒想到要放甚麼</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                會員功能
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./indexLogIn.html">登入頁面</a></li>
+                <li><a class="dropdown-item" href="#">新用戶註冊</a></li>
+                <li><a class="dropdown-item" href="./indexlogout.html">登出帳戶</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                  <li><a class="deleteAccount dropdown-item" href="#">刪除帳戶</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                存匯中心
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./indexwithdraw.html">提款功能</a></li>
+                <li><a class="dropdown-item" href="./indexTrans.html">匯款功能</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                  <li><a class="dropdown-item" href="./indexdeposit.html">查詢銀行餘額</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://www.twtainan.net/content/images/attractions/42054/1024x768_Filedata635882965767779054.jpg"
+        class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://wwwap.bot.com.tw/ESG/img/news/20220506.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+        src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2023/05/01/20230501-051919_U27092_M849486_efbe.jpg?itok=sC1VzIbV"
+        class="d-block w-100" alt="...">
+      </div>
+      <div class="boxtest">
+        <h1> 網路銀行</h1>
+        <div class="login">
+          <label for="card">Account</label>
+          <input id="card" type="text" placeholder="card">
+          <label for="password">Password</label>
+          <input id="password" type="text" placeholder="password">
+          <button id="registerButton">註冊</button>
+          <button type="button" id="loginButton" class="button btn-outline-dark">登入</button>
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="botton">
+    <div class="botbox"></div>
+  </div>
+  
+  <script src="./javascrpt/indexSearch.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./javascrpt/indexLogin.js"></script>
+
+</html>

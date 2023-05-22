@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+.transArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .transInfo{
+        background-color: aliceblue;
+        position: absolute;
+    }
+    .btn-group{
+        top: 0%;
+        right: 1%;
+        position: absolute;
+    }
+    
+}
+.img1{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+.card-body{
+    line-height: auto;
+}
+.btn{
+    margin-top: 10px;
+}

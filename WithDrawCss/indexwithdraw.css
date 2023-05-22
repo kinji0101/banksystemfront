@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+.withdrawarea img {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.withdrawarea .box1 {
+  position: fixed;
+  background-color: white;
+  height: 22.5rem;
+  width: 18.75rem;
+  top: 17%;
+  left: 60%;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0 2px #000;
+}
+.withdrawarea .box1 .img1 {
+  width: 100%;
+  height: 60%;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.withdrawarea .box1 .img2 {
+  width: 100%;
+  height: 81%;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.withdrawarea .box1 .img3 {
+  width: 100%;
+  height: 65%;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.withdrawarea .box1 .left {
+  float: left;
+}
+.withdrawarea .box1 .right {
+  float: right;
+  clear: right;
+}
+.withdrawarea .btn-group {
+  top: 2%;
+  right: 1%;
+  position: absolute;
+}/*# sourceMappingURL=indexwithdraw.css.map */

@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+.withdrawarea {
+    img {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+  
+    .box1 {
+      position: fixed;
+      background-color: white;
+      height: 22.5rem; 
+      width: 18.75rem;
+      top: 17%;
+      left: 60%;
+      border-radius: 0.625rem;
+      box-shadow: 0 0 0 2px #000;
+      .img1 {
+        width: 100%;
+        height: 60%;
+        border-radius: 0.625rem;
+        object-fit: cover;
+      }
+  
+      .img2 {
+        width: 100%;
+        height: 81%;
+        border-radius: 0.625rem;
+        object-fit: cover;
+      }
+      .img3{
+        width: 100%;
+        height: 65%;
+        border-radius: 0.625rem;
+        object-fit: cover;
+      }
+  
+      .left {
+        float: left;
+      }
+  
+      .right {
+        float: right;
+        clear: right;
+      }
+    }
+    .btn-group{
+      top: 2%;
+      right: 1%;
+      position: absolute;
+
+  }
+}
+  

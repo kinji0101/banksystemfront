@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.logoutarea img {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.logoutarea .btn1 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+}
+.logoutarea .btn2 {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+}/*# sourceMappingURL=indexlogout.css.map */

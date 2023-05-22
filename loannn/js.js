@@ -16,6 +16,13 @@ btn.addEventListener("click", function () {
     body: JSON.stringify(pay),
   })
     .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+    .then((data) => {
+      const formattedData = `${data.message}`;
+      alert(formattedData);
+      console.log(data);
+    })
+    .catch((err) => {
+      alert(err);
+      console.log(err);
+    });
 });

@@ -13,51 +13,62 @@ body {
   align-items: center;
   justify-content: center;
   background-color: tomato;
-}
 
-.pay {
 
-  .card {
-    background-color: #0b132b;
-    width: 400px;
-    color: wheat;
-    padding: 40px;
-    box-shadow: 10px 10px 25px #000;
-  }
+  .pay {
 
-  input {
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    background: none;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 20px;
-    outline: none;
-    color: aliceblue;
-  }
+    .card {
+      background-color: #0b132b;
+      width: 400px;
+      color: wheat;
+      padding: 40px;
+      box-shadow: 10px 10px 25px #000;
+    }
 
-  .code,
-  .payment {
-    border: 2px solid #3498db;
-    width: 220px;
-  }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration-line: none;
+    }
 
-  .code:focus,
-  .payment:focus {
-    border-color: #2ecc71;
-    width: 280px;
-    transition: 0.5s;
-  }
+    input {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      background: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 20px;
+      outline: none;
+      color: aliceblue;
+    }
 
-  .btn {
-    width: 150px;
-    border: 2px solid #2ecc71;
-    cursor: pointer;
-  }
+    .code,
+    .payment {
+      border: 2px solid #3498db;
+      width: 225px;
+    }
 
-  .btn:hover {
-    background-color: #2ecc71;
-    transition: 0.5s;
+    .code:focus,
+    .payment:focus {
+      border-color: #2ecc71;
+      width: 280px;
+      transition: 0.5s;
+    }
+
+    .btn {
+      width: 160px;
+      border: 2px solid #2ecc71;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2ecc71;
+      transition: 0.5s;
+    }
   }
 }

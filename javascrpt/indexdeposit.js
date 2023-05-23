@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="https://memeprod.sgp1.digitaloceanspaces.com/meme/817894494ed01f636cfd853bb25dcdf3.png" class="img1">
           <h5>歡迎回來${name}！</h5>
           <h5>您的帳戶餘額${checkData.message}</h5>
-          <a href="./index.html">
+          <a href="https://kinji0101.github.io/banksystemfront/index.html">
           <h5 class="right">滾回首頁</h5>
           </a>
           <p id="loginInfo"></p>

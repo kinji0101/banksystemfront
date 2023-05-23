@@ -52,7 +52,11 @@ transferButton.addEventListener('click', function() {
           } else if (checkData.message === "轉帳失敗"){
             alert(checkData.message);
           } else if(transferMoney === "" ){
-            alert("請輸入提款金額");
+            alert("請輸入匯款金額");
+          }else if (checkData.message === "卡號和密碼不匹配"){
+            alert(checkData.message);
+          }else if (checkData.message === "卡號與轉入者不匹配"){
+            alert(checkData.message);
           }else if (checkData.message === "請確實輸入卡號和密碼"){
             alert(checkData.message);
           }else if (checkData.message === "卡號不存在"){

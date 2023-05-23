@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         box1Element.innerHTML = `
         <img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1670302308075.jpg" class="img2" style="max-width: 100%; max-height: 100%;">
         <h5 class="left">請先登錄喔</h5>
-        <a href="./indexLogin.html">
+        <a href="https://kinji0101.github.io/banksystemfront/index.html">
         <h5 class="right">登入頁面點這</h5>
         </a>
         <p id="loginInfo"></p>
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </a>
           </div>
           <div class="col">
-          <a href="./indexHome.html">
+          <a href="https://kinji0101.github.io/banksystemfront/index.html">
           <button type="button" class="btn btn-primary btn-sm ">返回首頁</button>
           </a>
           </div>

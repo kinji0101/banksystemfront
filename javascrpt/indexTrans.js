@@ -73,7 +73,7 @@ transferButton.addEventListener('click', function() {
                 </a>
                 </div>
                 <div class="col">
-                <a href="./index.html">
+                <a href="https://kinji0101.github.io/banksystemfront/index.html">
                 <button type="button" class="btn btn-primary btn-sm ">返回首頁</button>
                 </a>
                 </div>

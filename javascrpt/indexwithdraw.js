@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
           box1Element.innerHTML = `
             <img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1670302308075.jpg" class="img2">
             <h5 class="left">請先登錄喔</h5>
-            <a href="./indexLogIn.html">
+            <a href="https://kinji0101.github.io/banksystemfront/indexLogIn.html">
               <h5 class="right">登入頁面點這</h5>
             </a>
             <p id="loginInfo"></p>

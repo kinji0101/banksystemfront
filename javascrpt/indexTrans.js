@@ -53,6 +53,8 @@ transferButton.addEventListener('click', function() {
             alert(checkData.message);
           } else if(transferMoney === "" ){
             alert("請輸入提款金額");
+          }else if (checkData.message === "請確實輸入卡號和密碼"){
+            alert(checkData.message);
           }else if (checkData.message === "卡號不存在"){
             alert(checkData.message);
           }else {

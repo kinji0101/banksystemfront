@@ -1,6 +1,7 @@
 const errorMessageElement = document.getElementById('errorMessage');
 const loginButton = document.getElementById('loginButton');
 const boxtestElement = document.querySelector('.boxtest');
+const errorAREA = document.querySelector('.errorAREA');
 const card = sessionStorage.getItem('card');
 const password = sessionStorage.getItem('password');
 if (card || password) {
@@ -28,7 +29,7 @@ loginButton.addEventListener('click', function() {
         credentials: "include" // 或者 "same-origin"
     })
     .then(function(response) {
-        return response.json();
+         return response.json();
     })
     .then(function(data) {
         const checkData = JSON.parse(JSON.stringify(data));
@@ -45,7 +46,10 @@ loginButton.addEventListener('click', function() {
             `;
             boxtestElement.classList.add('boxtest-login-success');          
         }else if(checkData.message) {
-            alert(checkData.message);
+            console.log(checkData.message)
+            errorMessageElement.innerHTML = `
+            <h8>${checkData.message}</h8>
+        `;
         } 
     })
     .catch(function(err) {

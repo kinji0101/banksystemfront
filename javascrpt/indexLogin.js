@@ -44,7 +44,8 @@ loginButton.addEventListener('click', function() {
             <img src="https://i4.disp.cc/imgur/WC2G1KZh.jpg">
             <p>你可以使用銀行系統了</p>
             `;
-            boxtestElement.classList.add('boxtest-login-success');          
+            boxtestElement.classList.add('boxtest-login-success');
+            errorMessageElement.innerHTML = "";          
         }else if(checkData.message) {
             console.log(checkData.message)
             errorMessageElement.innerHTML = `

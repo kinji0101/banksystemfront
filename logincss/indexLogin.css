@@ -110,4 +110,7 @@ body {
   margin: -16px;
   background-color: rgb(185, 199, 221);
   height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=indexLogin.css.map */

@@ -48,7 +48,7 @@ loginButton.addEventListener('click', function() {
         }else if(checkData.message) {
             console.log(checkData.message)
             errorMessageElement.innerHTML = `
-            <h8>${checkData.message}</h8>
+            <h1 >${checkData.message}</h1>
         `;
         } 
     })

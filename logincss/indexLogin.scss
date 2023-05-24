@@ -106,11 +106,17 @@ body{
     position: absolute;
 }
 
-.errorAREA{
-    margin: -16px;
+.error-message{
     background-color: rgb(185, 199, 221);
-    height: 40vw;
+    height: 80vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
+    .errorimg{
+        height: 300px;
+        width: 300px;
+    }
+
 }

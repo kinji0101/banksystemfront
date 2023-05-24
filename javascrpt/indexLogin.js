@@ -48,7 +48,8 @@ loginButton.addEventListener('click', function() {
         }else if(checkData.message) {
             console.log(checkData.message)
             errorMessageElement.innerHTML = `
-            <h1 >${checkData.message}</h1>
+            <img class="errorimg" src="https://memeprod.ap-south-1.linodeobjects.com/user-template/536263c581f68d6a929bcbcf7191928a.png" alt="">
+            <h1>${checkData.message}</h1>
         `;
         } 
     })

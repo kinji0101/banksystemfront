@@ -5,7 +5,8 @@ var yourDataArray = [
     {title: '匯款功能', link: './indexTrans.html' },
     {title: '查詢帳戶餘額', link: './indexdeposit.html' },
     {title: '貸款', link: './銀行前端/貸款.html' },
-    {title: '數位金融繳費', link: './indexloannn.html' }
+    {title: '數位金融繳費', link: './indexloannn.html' },
+    {title: '存款功能', link: './銀行前端/存款.html' }
   ];
   
   document.querySelector("form").addEventListener("submit", function(e) {
@@ -29,7 +30,8 @@ var yourDataArray = [
       {title: '匯款功能', link: './indexTrans.html' },
       {title: '查詢帳戶餘額', link: './indexdeposit.html' },
       {title: '貸款', link: './銀行前端/貸款.html' },
-      {title: '數位金融繳費', link: './indexloannn.html' }
+      {title: '數位金融繳費', link: './indexloannn.html' },
+      {title: '存款功能', link: './銀行前端/存款.html' }
     ];
     
     // 搜尋結果中的相關頁面跳轉處理

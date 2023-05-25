@@ -38,6 +38,13 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.withdrawarea .box1 .img4 {
+  width: 100%;
+  height: 65%;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .withdrawarea .box1 .left {
   float: left;
 }

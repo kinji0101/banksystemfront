@@ -54,8 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (checkData.message === "提款金額不合法" || checkData.message === "提款失敗") {
           // 显示提款失败的消息
           box1Element.innerHTML = `
-            <!-- 其他内容 -->
-            <h5>${checkData.message}</h5>
+          <img src="https://memeprod.sgp1.digitaloceanspaces.com/user-template/8abcc93d8321c0f66898765c6694b19c.png"  class="img4">
+          <h5>${checkData.message}</h5>
+          <a href="./indexwithdraw.html">
+          <button type="button" class="btn btn-primary btn-sm">重新提款</button>
+          </a>
           `;
         } else {
           // 提款成功，显示提款成功和计算后的余额
@@ -67,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="row">
           <div class="col">
           <a href="./indexwithdraw.html">
-          <button type="button" class="btn btn-primary btn-sm">重新轉帳</button>
+          <button type="button" class="btn btn-primary btn-sm">重新提款</button>
           </a>
           </div>
           <div class="col">

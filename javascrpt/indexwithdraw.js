@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <input id="card" type="number" placeholder="提款金額">
             <button id="registerButton">提款</button>
             <a href="https://kinji0101.github.io/banksystemfront/index.html">
-            <h5 class="right">滾回首頁</h5>
+            <h5 class="right">返回首頁</h5>
             </a>
             <p id="loginInfo"></p>
           `;

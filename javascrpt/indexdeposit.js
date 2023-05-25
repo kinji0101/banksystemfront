@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <h5>歡迎回來${name}！</h5>
           <h5>您的帳戶餘額${checkData.message}</h5>
           <a href="https://kinji0101.github.io/banksystemfront/index.html">
-          <h5 class="right">滾回首頁</h5>
+          <h5 class="right">返回首頁</h5>
           </a>
           <p id="loginInfo"></p>
         `;

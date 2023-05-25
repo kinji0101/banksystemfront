@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <img src="https://memeprod.sgp1.digitaloceanspaces.com/meme/817894494ed01f636cfd853bb25dcdf3.png" class="img1">
             <h5>您好，${name}，請在下面輸入提款金額</h5>
             <label for="card">提款金額</label>
-            <input id="card" type="number" placeholder="提款金額">
+            <input id="card" type="number" placeholder="提款金額" maxlength="9">
             <button id="registerButton">提款</button>
             <a href="https://kinji0101.github.io/banksystemfront/index.html">
             <h5 class="right">返回首頁</h5>

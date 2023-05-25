@@ -61,18 +61,18 @@ inputs.forEach(function(input) {
     });
   });
 
-  var logoutButton = document.getElementById("logout");
-logoutButton.addEventListener("click", function() {
-  // 清除登入憑證，例如刪除Cookie或清空sessionStorage
-  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  sessionStorage.clear();
-
-  window.location.href = "https://kinji0101.github.io/banksystemfront/";
-});
-
-window.onload = function() {
-  window.history.pushState(null, null, document.URL);
-  window.addEventListener('popstate', function () {
-    window.history.pushState(null, null, document.URL);
+  const logoutButton = document.getElementById("logout");
+  logoutButton.addEventListener("click", function() {
+    // 清除登录凭证，例如删除 Cookie 或清空 sessionStorage
+    document.cookie =
+      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    sessionStorage.clear();
+  
+    // 禁用浏览器的后退功能
+    history.pushState(null, null, location.href);
+    window.onpopstate = function() {
+      history.go(1);
+    };
+  
+    window.location.href = "https://kinji0101.github.io/banksystemfront/";
   });
-};

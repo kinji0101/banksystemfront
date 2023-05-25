@@ -76,20 +76,18 @@ inputs.forEach(input => {
 });
 
 // 监听退出按钮的点击事件
-var logoutButton = document.getElementById("logout");
+const logoutButton = document.getElementById("logout");
 logoutButton.addEventListener("click", function() {
   // 清除登录凭证，例如删除 Cookie 或清空 sessionStorage
   document.cookie =
     "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   sessionStorage.clear();
 
+  // 禁用浏览器的后退功能
+  history.pushState(null, null, location.href);
+  window.onpopstate = function() {
+    history.go(1);
+  };
+
   window.location.href = "./首頁.html";
 });
-
-
-window.onload = function() {
-  window.history.pushState(null, null, document.URL);
-  window.addEventListener('popstate', function () {
-    window.history.pushState(null, null, document.URL);
-  });
-};

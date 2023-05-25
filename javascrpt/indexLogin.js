@@ -4,7 +4,7 @@ const boxtestElement = document.querySelector('.boxtest');
 const errorAREA = document.querySelector('.errorAREA');
 const card = sessionStorage.getItem('card');
 const password = sessionStorage.getItem('password');
-if (card || password) {
+if (card && password) {
     const name = sessionStorage.getItem("name");
         boxtestElement.innerHTML = `
         <h5>登入成功，歡迎你 ${name}！</h5>

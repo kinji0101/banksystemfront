@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 <head>
-  <title>銀行首頁</title>
-  <link rel="stylesheet" type="text/css" href="首頁.css">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="./首頁.css">
 </head>
 <body>
-  <h1>歡迎進入銀行帳戶管理系統</h1>
-  <div class="password-input">
-    <input type="password" id="password" placeholder="請輸入密碼">
-    <button onclick="checkPassword()">登入</button>
+  <div class="container">
+    <h1>歡迎進入帳戶管理系統</h1>
+    <h2 class="login">請先登入</h2>
+    <div id="loginForm">
+      <input type="text" id="account" placeholder="account" >
+      <input type="password" id="password" placeholder="Password" >
+      <button id="btn1" type="submit">Login</button>
+    </div>
+    <a id="home-link" href="https://kinji0101.github.io/banksystemfront/"><h2>返回首頁</h2></a>
   </div>
-  <script src="首頁.js"></script>
+
+  <script src="./首頁3.js"></script>
 </body>
 </html>

@@ -1,3 +1,13 @@
+const card = sessionStorage.getItem("card");
+const password = sessionStorage.getItem("password");
+
+  // 檢查使用者是否已登入
+  if (!card || !password) {
+    // 如果未登入，重新導向到登入頁面
+    window.location.href = "https://kinji0101.github.io/banksystemfront/indexLogIn.html";
+  }
+
+
 let btn1 = document.querySelector("#btn1");
 
 btn1.addEventListener("click", () => {
@@ -49,4 +59,13 @@ inputs.forEach(function(input) {
       btn1.click();
     }
   });
+});
+
+var logoutButton = document.getElementById("logout");
+logoutButton.addEventListener("click", function() {
+  // 清除登入憑證，例如刪除Cookie或清空sessionStorage
+  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  sessionStorage.clear();
+
+  window.location.href = "https://kinji0101.github.io/banksystemfront/";
 });

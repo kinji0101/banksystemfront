@@ -62,3 +62,10 @@ logoutButton.addEventListener("click", function() {
 
   window.location.href = "https://kinji0101.github.io/banksystemfront/";
 });
+
+window.onload = function() {
+  window.history.pushState(null, null, document.URL);
+  window.addEventListener('popstate', function () {
+    window.history.pushState(null, null, document.URL);
+  });
+};

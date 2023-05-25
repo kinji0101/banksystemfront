@@ -64,7 +64,7 @@ button:hover {
 
     nav {
         background-color: transparent;
-        margin-left: 410px;
+        margin: 0 auto;
         padding: 1px;
         width: 700px;
         display: flex;

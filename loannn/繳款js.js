@@ -1,10 +1,16 @@
 const code = document.querySelector("#code");
+const card = document.querySelector("#cardNum");
+const account = document.querySelector("#account");
+const password = document.querySelector("#password");
 const payment = document.querySelector("#payment");
 const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", function () {
   const pay = {
     "id": parseInt(code.value),
+    "card": cardNum.value,
+    "account": account.value,
+    "password": password.value,
     "amount": parseInt(payment.value)
   };
 

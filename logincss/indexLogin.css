@@ -125,4 +125,8 @@ body {
 .error-message .errorimg {
   height: 500px;
   width: 500px;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=indexLogin.css.map */

@@ -12,7 +12,6 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href=".//logincss/indexLogin.css">
   <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-  <script src="./path/to/your/custom/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
   <title>我是銀行</title>
 </head>
@@ -44,11 +43,12 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="./indexLogIn.html">登入頁面</a></li>
+                  <li><a class="dropdown-item" href="./loannn/註冊.html">註冊帳號</a></li>
                   <li><a class="dropdown-item" href="./indexlogout.html">登出帳戶</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="deleteAccount dropdown-item" href="./銀行前端/銀行首頁/首頁.html">員工入口</a></li>
+                  <li><a class="deleteAccount dropdown-item" target="_blank" href="./銀行前端/銀行首頁/首頁.html">員工入口</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -58,7 +58,6 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="./indexwithdraw.html">提款功能</a></li>
-                  <li><a class="dropdown-item" href="./銀行前端/存款.html">存款功能</a></li>
                   <li><a class="dropdown-item" href="./indexTrans.html">匯款功能</a></li>
                   <li>
                     <hr class="dropdown-divider">
@@ -80,9 +79,12 @@
                     <li><a class="loanitem dropdown-item" href="./銀行前端/貸款.html">貸款</a></li>
                 </ul>
             </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+            <li class="userName nav-item dropdown">
+              <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  用戶名稱
+              </a>
+          </li>
             </ul>
             <form class="d-flex">
               <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -111,8 +113,8 @@
       <div class="boxtest">
         <h1> 網路銀行</h1>
         <div class="login">
-          <label for="card">Card</label>
-          <input id="card" type="number" placeholder="card">
+          <label for="account">Account</label>
+          <input id="account" type="number" placeholder="account">
           <label for="password">Password</label>
           <input id="password" type="password" placeholder="password">
           <button type="button" id="loginButton" class="button btn-outline-dark">登入</button>

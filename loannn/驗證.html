@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./驗證.css">
+
+<body>
+
+  <!-- 验证表单 -->
+  <div class="verify">
+    <div class="card">
+      <form action="/verify" method="post">
+        <p>輸入郵箱中的驗證碼</p>
+        <input type="hidden" id="cardNum" name="cardNum" value="${cardNum}">
+        <input type="hidden" id="account" name="account" value="${account}">
+        <input type="hidden" id="password" name="password" value="${password}">
+        <input type="hidden" id="name" name="name" value="${name}">
+        <input type="hidden" id="address" name="address" value="${address}">
+        <input type="hidden" id="email" name="email" value="${email}">
+        <input type="hidden" id="phoneNumber" name="phoneNumber" value="${phoneNumber}">
+        <input type="text" placeholder="驗證碼" id="code" class="code">
+        <button type="button" id="again" class="again">重新發送</button>
+        <input type="submit" value="驗證" id="btn" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <script src="./驗證js.js"></script>
+</body>
+
+</html>

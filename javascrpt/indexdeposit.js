@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
   const box1Element = document.querySelector('.box1');
   const card = sessionStorage.getItem('card');
+  const  account = sessionStorage.getItem('account');
   const password = sessionStorage.getItem('password');
   const deposit = sessionStorage.getItem('deposit');
-  fetch("http://localhost:8080/get_Deposit_By_Card_And_Password", {
+  fetch("http://localhost:8080/get_Deposit_By_Account_And_Password", {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
       },
       body: JSON.stringify({
           card: card,
+          account:account,
           password: password,
           deposit: deposit
       }),

@@ -1,31 +1,58 @@
-body{
+body {
     margin: 0;
-}
-
-.transArea{
+    background-color: #202124;
+  }
+  
+  .transArea {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
-    .transInfo{
-        background-color: aliceblue;
-        position: absolute;
-    }
-    .btn-group{
-        top: 0%;
-        right: 1%;
-        position: absolute;
-    }
-    
-}
-.img1{
+    margin-top: 20vh;
+  }
+  
+  .transInfo {
+    background-color: aliceblue;
+  }
+  
+  .infoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    height: 450px;
+    width: 350px;
+    right: 70%;
+    background-color: aliceblue;
+  }
+  
+  .img1 {
     width: 50vw;
     height: 100vh;
     position: relative;
-}
-.card-body{
+  }
+  
+  .card-body {
     line-height: auto;
-}
-.btn{
+  }
+  
+  .btn {
     margin-top: 10px;
-}
+  }
+  
+  .btn-group {
+    top: 5%;
+    right: 5%;
+    position: absolute;
+  }
+  .infotitle{
+    margin-bottom: 30px;
+    color: blue;
+  }
+  h6{
+    margin-top: 20px;
+  }
+  .vip{
+    color: rgb(230, 7, 26);
+  }

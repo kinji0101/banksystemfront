@@ -1,3 +1,6 @@
+const account = sessionStorage.getItem('account');
+const password = sessionStorage.getItem('password');
+const userNameElement = document.querySelector('.userName');
 var yourDataArray = [
     { title: '登入功能', link: './indexLogIn.html' },
     {title: '登出', link: './indexlogout.html' },
@@ -102,3 +105,24 @@ $(document).ready(function () {
     );
   });
 });
+if (account && password) {
+  const name = sessionStorage.getItem("name");
+  const card = sessionStorage.getItem("card");
+  const card2 = sessionStorage.getItem("card2");
+  const card3 = sessionStorage.getItem("card3");
+  userNameElement.innerHTML = `
+      <li class="nav-item dropdown">
+          <a class="userName nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ${name}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              ${card ? `<li class="dropdown-item">卡號:${card}</li>` : ''}
+              ${card2 ? `<li class="dropdown-item">${card2}</li>` : ''}
+              ${card3 ? `<li class="dropdown-item">${card3}</li>` : ''}
+              ${card || card2 || card3 ? '<li><hr class="dropdown-divider"></li>' : ''}
+              <li><a class="loanitem dropdown-item" href=""></a></li>
+          </ul>
+      </li>
+  `;
+}

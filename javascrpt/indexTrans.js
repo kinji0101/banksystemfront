@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
               box1Element.innerHTML = `
                   <h5 class="card-title">系統訊息:${checkData.message}</h5>
                   <p>您的帳戶餘額:${data.deposit}</p>
-                  <p>轉帳人:${name}</p>
+                  <p>轉帳者(本人):${name}</p>
                   <p>剩餘轉帳優惠次數:${data.offer}</p>
                   <div class="row">
                       <div class="col">
